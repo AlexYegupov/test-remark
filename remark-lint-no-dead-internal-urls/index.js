@@ -3,30 +3,13 @@
 const rule = require('unified-lint-rule');
 const visit = require('unist-util-visit');
 const checkLinks = require('check-links');
-const isOnline = require('is-online');
+//const isOnline = require('is-online');
 
-//const ALL_FILES = []
-
-function noDeadUrls(ast, file, options) {
-
-  //console.log(`noDeadUrls`, file.stem, ALL_FILES)
-  //console.log(`FILE_`, file.path )
-
-  //ALL_FILES.push(file.stem)
-  /*
-   *   const fff = (node) => {
-   *     console.log(`FFF`, node)
-   *   }
-   *   visit(ast, ['heading'], fff);
-   *  */
-
+// eslint-disable-next-line node/no-unsupported-features
+function noDeadUrls(ast, file, options = {}) {
   const urlToNodes = {};
 
   const aggregate = (node) => {
-
-    //console.log(`aggregate:`, ALL_FILES)
-    console.log(`NNN:`, node.url)
-
     const url = node.url;
     if (!url) return;
     if (
@@ -69,24 +52,4 @@ function noDeadUrls(ast, file, options) {
   );
 }
 
-function wrapper(ast, file, options) {
-  options = options || {};
-
-  //console.log(`wrapper`, file.stem)
-
-  // return isOnline().then((online) => {
-  //   if (!online) {
-  //     if (!options.skipOffline) {
-  //       file.message('You are not online and have not set skipOffline: true.');
-  //     }
-  //     return;
-  //   }
-  //ALL_FILES.push(file.stem)
-
-  return noDeadUrls(ast, file, options);
-  //});
-}
-
-console.log(`EEEEEEEEEEe`)
-
-module.exports = rule('remark-lint:no-dead-internal-urls', wrapper);
+module.exports = rule('remark-lint:no-dead-internal-urls', noDeadUrls);

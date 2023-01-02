@@ -17,9 +17,9 @@ module.exports = {
   plugins: [
     //ejs [require('remark-lint-no-undefined-references'), {aa:'AA'}],
 
-    //[require('./remark-lint-no-dead-internal-urls'), {dummy: 'Options'}]
+    //[require('remark-lint-no-dead-urls'), {dummy: 'Options'}]
 
-    //[require('remark-lint-no-dead-urls'), {}]
+    [require('./remark-lint-no-dead-internal-urls'), {}],
     [require('./remark-test-plugin'), {}]
 
     //remarkPresetLintConsistent, // Check that markdown is consistent.
