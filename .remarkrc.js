@@ -19,7 +19,8 @@ module.exports = {
 
     //[require('./remark-lint-no-dead-internal-urls'), {dummy: 'Options'}]
 
-    [require('remark-lint-no-dead-urls'), {}]
+    //[require('remark-lint-no-dead-urls'), {}]
+    [require('./remark-test-plugin'), {}]
 
     //remarkPresetLintConsistent, // Check that markdown is consistent.
     //remarkPresetLintRecommended, // Few recommended rules.

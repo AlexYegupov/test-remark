@@ -1,4 +1,5 @@
-import visit from 'unist-util-visit'
+//import visit from 'unist-util-visit'
+const visit = require('unist-util-visit')
 
 const exp = () => tree => {
   visit(tree, 'heading', node => {
@@ -8,12 +9,14 @@ const exp = () => tree => {
 
     visit(node, 'text', textNode => {
       textNode.value = 'BREAKING ' + textNode.value
+      console.log(111111)
     })
   })
 }
 
-console.log(111111)
-export default exp
+
+//export default exp
+module.exports = exp
 
 
 /*
