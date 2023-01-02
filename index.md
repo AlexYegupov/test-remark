@@ -5,6 +5,12 @@
 
 [doc2.md#chapter2](doc2.md#chapter2)
 
+
+[./doc2#chapter2](./doc2#chapter2)
+
+[doc2#chapter2](doc2#chapter2)
+
+
 [doc3.md#chapter2](doc3.md#chapter-2)
 
 [docчетыре](./docчетыре.md)

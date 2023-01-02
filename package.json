@@ -4,6 +4,7 @@
     "docsify-cli": "^4.4.4",
     "remark": "^14.0.2",
     "remark-cli": "^11.0.0",
+    "remark-html": "^10.0.0",
     "remark-lint": "^9.1.1",
     "remark-lint-no-file-name-irregular-characters": "^2.1.1",
     "remark-lint-no-undefined-references": "^4.2.0",
@@ -15,6 +16,6 @@
     "remark-lint-no-dead-urls": "^1.1.0"
   },
   "scripts": {
-    "test-remark-modify-plugins": "yarn remark -f . -o ./test-output"
+    "test-remark-modify-plugins": "yarn remark -f ./*.md -o ./test-output"
   }
 }
