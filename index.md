@@ -1,17 +1,13 @@
 # this is index.md
 ## subheader 1.1
 
-[./doc2.md#chapter2](./doc2.md#chapter2)
+[#chapter](#chapter)
 
-[doc2.md#chapter2](doc2.md#chapter2)
+[#broken-chapter](#broken-chapter)
 
+[doc2.md#chapter2](./doc2.md#chapter2)
 
-[./doc2#chapter2](./doc2#chapter2)
-
-[doc2#chapter2](doc2#chapter2)
-
-
-[doc3.md#chapter2](doc3.md#chapter-2)
+[doc2.md#broken-chapter](doc2.md#broken-chapter)
 
 [docчетыре](./docчетыре.md)
 
@@ -21,11 +17,9 @@ fdffdties textddddfd dfsadf sadffdsa sdafdf
 
 dffdff fdfdf fddf df dfddf eee
 
-[1](./doc2.md#chapter-3-renamed)
+[1](./doc2.md#chapter3)
 
-[2][def]
-
-[./docBROKENLINK](./docBROKENLINK)
+[2][my-definition]
 
 [docBROKENLINK](docBROKENLINK)
 
@@ -37,7 +31,7 @@ automatic link:
 - <a>doc3</a>
 - <a href="doc3">doc3</a>
 
-[def]: ./doc3
+[my-definition]: ./doc3.md
 
 ----
 
@@ -62,3 +56,5 @@ other:
 
 Visit [Daring Fireball][] for more information3.
 And then define the link:
+
+## chapter

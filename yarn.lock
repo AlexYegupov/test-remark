@@ -887,6 +887,11 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
+github-slugger@^1.0.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.5.0.tgz#17891bbc73232051474d68bd867a34625c955f7d"
+  integrity sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==
+
 glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -1000,6 +1005,13 @@ hast-util-whitespace@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-1.0.4.tgz#e4fe77c4a9ae1cb2e6c25e02df0043d0164f6e41"
   integrity sha512-I5GTdSfhYfAPNztx2xJRQpG8cuDSNt599/7YUn7Gx/WxNMsG+a835k97TDkFgk123cwjfwINaZknkKkphx/f2A==
+
+hosted-git-info@^5.0.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.2.1.tgz#0ba1c97178ef91f3ab30842ae63d6a272341156f"
+  integrity sha512-xIcQYMnhcx2Nr4JTjsFmwwnr9vldugPy9uVm0o87bjqqWMv9GaqsTeT+i99wTl0mk1uLxJtHxLb8kymqTENQsw==
+  dependencies:
+    lru-cache "^7.5.1"
 
 html-void-elements@^1.0.0:
   version "1.0.5"
@@ -1282,6 +1294,11 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
+levenshtein-edit-distance@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/levenshtein-edit-distance/-/levenshtein-edit-distance-1.0.0.tgz#895baf478cce8b5c1a0d27e45d7c1d978a661e49"
+  integrity sha512-gpgBvPn7IFIAL32f0o6Nsh2g+5uOvkt4eK9epTfgE4YVxBxwVhJ/p1888lMm/u8mXdu1ETLSi6zeEmkBI+0F3w==
+
 lines-and-columns@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-2.0.3.tgz#b2f0badedb556b747020ab8ea7f0373e22efac1b"
@@ -1355,6 +1372,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+lru-cache@^7.5.1:
+  version "7.14.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.14.1.tgz#8da8d2f5f59827edb388e63e459ac23d6d408fea"
+  integrity sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -2036,6 +2058,13 @@ property-information@^5.2.0:
   dependencies:
     xtend "^4.0.0"
 
+propose@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/propose/-/propose-0.0.5.tgz#48a065d9ec7d4c8667f4050b15c4a2d85dbca56b"
+  integrity sha512-Jary1vb+ap2DIwOGfyiadcK4x1Iu3pzpkDBy8tljFPmQvnc9ES3m1PMZOMiWOG50cfoAyYNtGeBzrp+Rlh4G9A==
+  dependencies:
+    levenshtein-edit-distance "^1.0.0"
+
 public-ip@^4.0.1:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/public-ip/-/public-ip-4.0.4.tgz#b3784a5a1ff1b81d015b9a18450be65ffd929eb3"
@@ -2695,6 +2724,15 @@ remark-preset-lint-markdown-style-guide@4.0.0:
     remark-lint-table-pipes "^3.0.0"
     remark-lint-unordered-list-marker-style "^2.0.0"
 
+remark-reference-links@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/remark-reference-links/-/remark-reference-links-6.0.1.tgz#e1927ad8018585dfc97f7b9c5f781f6d246f1d96"
+  integrity sha512-34wY2C6HXSuKVTRtyJJwefkUD8zBOZOSHFZ4aSTnU2F656gr9WeuQ2dL6IJDK3NPd2F6xKF2t4XXcQY9MygAXg==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
+
 remark-stringify@^10.0.0:
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-10.0.2.tgz#50414a6983f5008eb9e72eed05f980582d1f69d7"
@@ -2718,6 +2756,23 @@ remark-textr@4.0.0:
   dependencies:
     textr "^0.3.0"
     unist-util-visit "^2.0.0"
+
+remark-validate-links@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/remark-validate-links/-/remark-validate-links-12.1.0.tgz#496da668182036fbd5015ff727f05ce754951af4"
+  integrity sha512-+QhcQmu4WhUhxSduRbSInrFAMAFyNVX7QP0OW5AX8C6NzxMweJnwPBsCfWsV77ivIpC5L6sPbZfMLoW85UoMHQ==
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    github-slugger "^1.0.0"
+    hosted-git-info "^5.0.0"
+    mdast-util-to-string "^3.0.0"
+    propose "0.0.5"
+    to-vfile "^7.0.0"
+    trough "^2.0.0"
+    unified "^10.0.0"
+    unified-engine "^10.0.1"
+    unist-util-visit "^4.0.0"
+    vfile "^5.0.0"
 
 remark@13.0.0:
   version "13.0.0"
@@ -3123,7 +3178,7 @@ unified-args@^10.0.0:
     text-table "^0.2.0"
     unified-engine "^10.0.0"
 
-unified-engine@^10.0.0:
+unified-engine@^10.0.0, unified-engine@^10.0.1:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/unified-engine/-/unified-engine-10.1.0.tgz#6899f00d1f53ee9af94f7abd0ec21242aae3f56c"
   integrity sha512-5+JDIs4hqKfHnJcVCxTid1yBoI/++FfF/1PFdSMpaftZZZY+qg2JFruRbf7PaIwa9KgLotXQV3gSjtY0IdcFGQ==

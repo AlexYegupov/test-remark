@@ -3,13 +3,17 @@
 //import PPP from 'remark-lint-no-file-name-irregular-characters';
 //import remarkToc from 'remark-toc'
 
-//import plugin from './remark-test-plugin/index.js'
-
+import testPlugin from './remark-test-plugin/index.js'
+//import noDeadUrls from './remark-lint-no-dead-internal-urls/index.js'
+import remarkHTML from 'remark-html';
+import remarkValidateLinks from 'remark-validate-links';
+//const noDeadUrls = await import('./remark-lint-no-dead-internal-urls/index.js');
 
 //const plugin = require('remark-lint-no-dead-urls')
 
-module.exports = {
-//export default {
+
+//module.exports = {
+export default {
   settings: {
     bullet: '*', // Use `*` for list item bullets (default)
     // See <https://github.com/remarkjs/remark/tree/main/packages/remark-stringify> for more options.
@@ -19,9 +23,13 @@ module.exports = {
 
     //[require('remark-lint-no-dead-urls'), {dummy: 'Options'}]
 
-    [require('./remark-lint-no-dead-internal-urls'), {}],
-    [require('./remark-test-plugin'), {}],
-    [require('remark-html'), {}]
+    //w [noDeadUrls],
+    //w [testPlugin],
+
+    //[require('remark-reference-links'), {}],
+    [remarkValidateLinks],
+
+    [remarkHTML],
 
     //remarkPresetLintConsistent, // Check that markdown is consistent.
     //remarkPresetLintRecommended, // Few recommended rules.

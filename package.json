@@ -8,6 +8,8 @@
     "remark-lint": "^9.1.1",
     "remark-lint-no-file-name-irregular-characters": "^2.1.1",
     "remark-lint-no-undefined-references": "^4.2.0",
+    "remark-reference-links": "^6.0.1",
+    "remark-validate-links": "^12.1.0",
     "retypeapp": "^2.4.0",
     "showdown": "^2.1.0"
   },
