@@ -1,9 +1,13 @@
 # this is index.md
 ## subheader 1.1
 
-[#chapter](#chapter)
+[#chapter-1](#chapter-1)
 
 [#broken-chapter](#broken-chapter)
+
+[doc2.md](./doc2.md)
+
+[doc2.html](./doc2.html)
 
 [doc2.md#chapter2](./doc2.md#chapter2)
 
@@ -19,7 +23,12 @@ dffdff fdfdf fddf df dfddf eee
 
 [1](./doc2.md#chapter3)
 
-[2][my-definition]
+My definitons:
+
+* [my definition][my-definition]
+
+* [my-definition][]
+
 
 [docBROKENLINK](docBROKENLINK)
 
@@ -57,4 +66,4 @@ other:
 Visit [Daring Fireball][] for more information3.
 And then define the link:
 
-## chapter
+## chapter 1
