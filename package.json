@@ -10,7 +10,8 @@
     "remark-reference-links": "^6.0.1",
     "remark-validate-links": "^12.1.0",
     "retypeapp": "^2.4.0",
-    "showdown": "^2.1.0"
+    "showdown": "^2.1.0",
+    "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
@@ -18,5 +19,6 @@
   },
   "scripts": {
     "test-remark-modify-plugins": "yarn remark -f ./*.md -o ./test-output"
-  }
+  },
+  "type": "module"
 }
