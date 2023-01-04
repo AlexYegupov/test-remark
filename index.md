@@ -3,6 +3,8 @@
 
 [#chapter-1](#chapter-1)
 
+[#chapter2](#chapter2)
+
 [#broken-chapter](#broken-chapter)
 
 [doc2.md](./doc2.md)
@@ -26,9 +28,9 @@ dffdff fdfdf fddf df dfddf eee
 My definitons:
 
 * [my definition][my-definition]
-
 * [my-definition][]
-
+* [my space def][my space def]
+* [my space def][]
 
 [docBROKENLINK](docBROKENLINK)
 
@@ -40,8 +42,8 @@ automatic link:
 - <a>doc3</a>
 - <a href="doc3">doc3</a>
 
-[my-definition]: ./doc3.md
-
+[my-definition]: doc2.md#chapter2
+[my space def]: doc3.md
 ----
 
 Visit [Daring Fireball][] for more information.
@@ -67,3 +69,9 @@ Visit [Daring Fireball][] for more information3.
 And then define the link:
 
 ## chapter 1
+
+asdffdas
+
+## chapter2
+
+dffsdfdsas

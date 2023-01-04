@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@funboxteam/markdown-lint": "^2.0.1",
     "docsify-cli": "^4.4.4",
     "remark": "^14.0.2",
     "remark-cli": "^11.0.0",
