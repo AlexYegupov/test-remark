@@ -29,8 +29,8 @@ My definitons:
 
 * [my definition][my-definition]
 * [my-definition][]
-* [my space def][my space def]
-* [my space def][]
+* [my-definition2][my-definition2]
+* [my-definition2][]
 
 [docBROKENLINK](docBROKENLINK)
 
@@ -43,7 +43,7 @@ automatic link:
 - <a href="doc3">doc3</a>
 
 [my-definition]: doc2.md#chapter2
-[my space def]: doc3.md
+[my-definition2]: #chapter-2
 ----
 
 Visit [Daring Fireball][] for more information.

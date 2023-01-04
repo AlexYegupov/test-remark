@@ -2,8 +2,6 @@
 
 ## here is doc2
 
-[text](qux)
-
 ```
 dfasdfa
 dfasfdadf
@@ -114,4 +112,4 @@ this is chapter 3
 
 [](./doc2.md#chapter2)
 
-[broken link](brokenlinkmd#chapter2)
+[broken link](brokenlink#chapter2)
