@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "docsify-cli": "^4.4.4",
     "hast-util-is-element": "^2.1.2",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.1.0",
@@ -16,16 +15,18 @@
     "remark-reference-links": "^6.0.1",
     "remark-rehype": "^10.1.0",
     "remark-validate-links": "^12.1.0",
-    "retypeapp": "^2.4.0",
     "showdown": "^2.1.0",
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
+    "docsify-cli": "^4.4.4",
     "remark-lint-no-dead-urls": "^1.1.0"
   },
   "scripts": {
-    "test-remark-modify-plugins": "yarn remark -f ./*.md -o ./test-output"
+    "validate-docs": "yarn remark -f ./*.md -o ./test-output",
+    "docsify-init": "docsify init ./docs",
+    "docs-server": "(cd docs && python3 -m http.server 3000)"
   },
   "type": "module"
 }

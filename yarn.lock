@@ -3558,11 +3558,6 @@ retext-sentence-spacing@^5.0.0:
     unist-util-is "^5.0.0"
     unist-util-visit "^4.0.0"
 
-retypeapp@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/retypeapp/-/retypeapp-2.4.0.tgz#a794e3185f2ea04d22b8948df1a3d9a971d78b78"
-  integrity sha512-vEND+JC0EtK1nws958J108Z14Enfvt84bYeycaLa6eCZjsVzqV4Xe6hl7amYILycp7ld0x2uhx4Wh7iVlcdoCg==
-
 rxjs@^7.0.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"

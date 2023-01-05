@@ -1,43 +1,21 @@
-//import PPP from 'remark-lint-no-file-name-irregular-characters';
 //import remarkToc from 'remark-toc'
 
-import testPlugin from './remark-test-plugin/index.js'
+//import testPlugin from './remark-test-plugin/index.js'
 //import noDeadUrls from './remark-lint-no-dead-internal-urls/index.js'
 //import remarkHTML from 'remark-html';
 import remarkValidateLinks from 'remark-validate-links';
-//const noDeadUrls =require('./remark-lint-no-dead-internal-urls/index.js');
-//const plugin = require('remark-lint-no-dead-urls')
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
 
+
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
 
 
-
-//module.exports = {
-export default {
-  settings: {
-    bullet: '*', // Use `*` for list item bullets (default)
-    // See <https://github.com/remarkjs/remark/tree/main/packages/remark-stringify> for more options.
-  },
-  Zplugins: [
-    remarkPresetLintRecommended
-  ],
-  plugins: [
-    //ejs [require('remark-lint-no-undefined-references'), {aa:'AA'}],
-
-    //[require('remark-lint-no-dead-urls'), {dummy: 'Options'}]
-
-    //w [noDeadUrls],
-    [testPlugin],
-
-    //[require('remark-reference-links'), {}],
-    [remarkValidateLinks],
-
+const md2htmlPlugins = [
     // .md links -> .html links
     [() => (tree, file) => {
       visit(tree, 'link', (node, index, parent) => {
@@ -51,12 +29,12 @@ export default {
       })
     }],
 
-
     //[remarkHTML],
     [remarkRehype],
     [rehypeSlug], // add id to <h1>
     [rehypeAutolinkHeadings],
-/*
+
+/*  replace .md -> .html links as rehype plugin
     [() => (tree, file) => {
       visit(tree, 'element', (node, index, parent) => {
         if (isElement(node, 'a')) {
@@ -72,10 +50,18 @@ export default {
     [() => (tree, file) => {
       file.extname = '.html'
     }],
+]
 
-    //remarkPresetLintConsistent, // Check that markdown is consistent.
-    //remarkPresetLintRecommended, // Few recommended rules.
-    // Generate a table of contents in `## Contents`
+//module.exports = {
+export default {
+  settings: {
+    bullet: '*',
+  },
+  plugins: [
+    //[testPlugin],
+    //[require('remark-reference-links'), {}],
+    [remarkValidateLinks],
+
     //[remarkToc, {heading: 'contents'}]
   ]
 }
