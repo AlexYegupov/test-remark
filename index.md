@@ -1,5 +1,5 @@
 # this is index.md
-## subheader 1.1
+ ## subheader 1.1
 
 [#chapter-1](#chapter-1)
 
@@ -7,7 +7,9 @@
 
 [#broken-chapter](#broken-chapter)
 
-[doc2.md](./doc2.md)
+[./doc2.md](./doc2.md)
+
+[doc2.md](doc2.md)
 
 [doc2.html](./doc2.html)
 
@@ -42,9 +44,8 @@ automatic link:
 - <a>doc3</a>
 - <a href="doc3">doc3</a>
 
-[my-definition]: doc2.md#chapter2
-[my-definition2]: #chapter-2
-----
+[my-definition]: doc2.md#chapter-1
+[my-definition2]: #chapter2
 
 Visit [Daring Fireball][] for more information.
 And then define the link:

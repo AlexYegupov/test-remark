@@ -1,5 +1,3 @@
-/* import remarkPresetLintConsistent from 'remark-preset-lint-consistent'
- * import remarkPresetLintRecommended from 'remark-preset-lint-recommended' */
 //import PPP from 'remark-lint-no-file-name-irregular-characters';
 //import remarkToc from 'remark-toc'
 
@@ -8,14 +6,16 @@ import testPlugin from './remark-test-plugin/index.js'
 //import remarkHTML from 'remark-html';
 import remarkValidateLinks from 'remark-validate-links';
 //const noDeadUrls =require('./remark-lint-no-dead-internal-urls/index.js');
+//const plugin = require('remark-lint-no-dead-urls')
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
 
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
-//const plugin = require('remark-lint-no-dead-urls')
+
 
 
 //module.exports = {
@@ -24,6 +24,9 @@ export default {
     bullet: '*', // Use `*` for list item bullets (default)
     // See <https://github.com/remarkjs/remark/tree/main/packages/remark-stringify> for more options.
   },
+  Zplugins: [
+    remarkPresetLintRecommended
+  ],
   plugins: [
     //ejs [require('remark-lint-no-undefined-references'), {aa:'AA'}],
 

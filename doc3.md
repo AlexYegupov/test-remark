@@ -4,6 +4,6 @@ text
 
 ### chapter2
 
-[back to 1.md#s](./1.md#subchapter)
+[back to index.md](index.md)
 
 ### chapter3

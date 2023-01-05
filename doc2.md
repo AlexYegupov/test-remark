@@ -96,8 +96,6 @@ safddfsadasf
 asfddfas
 dsfaadfs dfdfdf
 
-[](fdffd)
-
 dsaf
 fdasd
 
