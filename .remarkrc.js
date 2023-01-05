@@ -10,10 +10,22 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
 
-
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
 
+//module.exports = {
+export default {
+  settings: {
+    bullet: '*',
+  },
+  plugins: [
+    //[testPlugin],
+    //[require('remark-reference-links'), {}],
+    [remarkValidateLinks],
+
+    //[remarkToc, {heading: 'contents'}]
+  ]
+}
 
 const md2htmlPlugins = [
     // .md links -> .html links
@@ -51,17 +63,3 @@ const md2htmlPlugins = [
       file.extname = '.html'
     }],
 ]
-
-//module.exports = {
-export default {
-  settings: {
-    bullet: '*',
-  },
-  plugins: [
-    //[testPlugin],
-    //[require('remark-reference-links'), {}],
-    [remarkValidateLinks],
-
-    //[remarkToc, {heading: 'contents'}]
-  ]
-}

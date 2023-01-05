@@ -24,3 +24,45 @@ It's about a project documentation that is created mostly created by developer t
    NOTE: docsify is considered just as a quick & simple visuailzation tool.
 
    In case of problems with docsify can append rehype plugins to remark plugin chain that can do the same work (md -> html convertion)
+
+
+
+## Current scheme
+
+```
+md --(remark-plugins)--> validated_md --(docsify)--> html
+
+```
+
+## Alternative scheme (if docsify will have limits)
+
+```
+md --(remark-plugins)--> validated_md --(rehype-plugiins)--> html
+
+```
+
+## See also
+remark/plugins.md at main · remarkjs/remark https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins
+
+remark-plugin · GitHub Topics https://github.com/topics/remark-plugin
+
+rehype/plugins.md at main · rehypejs/rehype https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins
+
+Transforming Markdown with Remark & Rehype | ryanfiller.com https://www.ryanfiller.com/blog/remark-and-rehype-plugins#basic-plugin-structure
+
+Explore - unified https://unifiedjs.com/explore/
+
+Quick start https://docsify.js.org/#/quickstart
+
+
+# TODO
+ - load images
+ - format md (by pretter or natively by remark?)
+ - terms storage strategy (md references?)
+ - TOC
+ - styling
+ - header, footer
+ - link prevew
+ - link
+ - convert it all to the library with instruction & create demo how to attach to project
+
