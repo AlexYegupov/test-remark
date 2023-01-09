@@ -1,82 +1,31 @@
-# this is index.md
+# Project documentation strategy hypotesis
 
-\##subheader 1.1
+It's about a project documentation that is created mostly created by developer than someone else like a customer.
 
-[#chapter-1](#chapter-1)
+1. Create docs as a markdown files in project repository
 
-[#chapter2](#chapter2)
+   Proc:
+    - easy to modify (any text editor OR VS code also has cool markdown editor and useful markdown plugins with hyperlink substitution)
 
-[#BROKEN-chapter](#BROKEN-chapter)
+    - easy to read (directly OR in browser+markdown plugin OR in simply in browser after markdown->html convertion (see p.3)
 
-[./doc2.md](./doc2.md)
+    - documentation is always synchronized with functionality (assummed that deeloper write documentation together with a code changes)
 
-[doc2](doc2)
+    - QA can easily see DIFF changes in documentation => can pay attentiions to the correspondent parts of the system that were changed
 
-[doc2.md](doc2.md)
+   Cons:
+    - a little harder documentation edition than WYSIWYG wiki editing (although simply editing could be made simply at the gitlab site commit).
 
-[doc2.html](./doc2.html)
 
-[doc2.md#chapter2](./doc2.md#chapter2)
+2. Format docs via prettier & validate by remark-cli & plugins (formatting, styles, template substitution, dead links check etc)
 
-[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter)
+3. visualize docs via docsify (md -> preview in the browser)
 
-[docBROKENLINK](docBROKENLINK)
+   NOTE: docsify is considered just as a quick & simple visuailzation tool.
 
-[dead--url.com](http://dead--url.com)
+   In case of problems with docsify can append rehype plugins to remark plugin chain that can do the same work (md -> html convertion)
 
-[docчетыре](./docчетыре.md)
 
-fdffdties textddddfd dfsadf sadffdsa sdafdf
-
-## subchapter 1.2
-
-dffdff fdfdf fddf df dfddf eee
-
-[1](./doc2.md#chapter3)
-
-My definitons:
-
-*   [my definition][my-definition]
-*   [my-definition][]
-*   [my-definition2][my-definition2]
-*   [my-definition2][]
-
-automatic link:
-
-*   </doc3>
-*   <a>doc3</a>
-*   <a href="doc3">doc3</a>
-
-[my-definition]: doc2.md#chapter-1
-
-[my-definition2]: #chapter2
-
-Visit [Daring Fireball][] for more information.
-And then define the link:
-
-Visit [Daring Fireball][] for more information2.
-And then define the link:
-
-Visit \[BROKEN]\[] for more information2.
-And then define the link:
-
-definition:
-
-[Daring Fireball]: http://daringfireball.net/
-
-other:
-
-Visit [Daring Fireball][] for more information3.
-And then define the link:
-
-## chapter 1
-
-asdffdas
-
-## chapter2
-
-dffsdfdsas
-  In case of problems with docsify can append rehype plugins to remark plugin chain that can do the same work (md -> html convertion)
 
 ## Current scheme
 
@@ -93,7 +42,6 @@ md --(remark-plugins)--> validated_md --(rehype-plugiins)--> html
 ```
 
 ## See also
-
 remark/plugins.md at main · remarkjs/remark https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins
 
 remark-plugin · GitHub Topics https://github.com/topics/remark-plugin
@@ -106,25 +54,14 @@ Explore - unified https://unifiedjs.com/explore/
 
 Quick start https://docsify.js.org/#/quickstart
 
-### how to add/edit images in md
-
-*   drug\&drop & manual fix fixfilename in VScode
-*   copy-paste by ctrl+alt+v using Markdown Paste VSCode extension
 
 # TODO
-
-*   remark-reference-links & how to create a terms?
-*   format md (by pretter or natively by remark?)
-*   terms storage strategy (md references?)
-*   TOC
-*   styling
-*   header, footer
-*   link prevew
-*   link
-*   convert it all to the library with instruction & create demo how to attach to project
-*   apply remark-autolink-references to convert links like JIRA-123 to project-configurable links (like project jira tickets etc)
-
-    (OR maybe use remark-linkify-regex for this?)
-*   add remark-truncate-links
-*   add remark-gfm (autolink urls, tables, linst, strikethrough, footnotes)
-*   ?(not sure) landakram/remark-wiki-link: Parse and render wiki links.
+ - load images
+ - format md (by pretter or natively by remark?)
+ - terms storage strategy (md references?)
+ - TOC
+ - styling
+ - header, footer
+ - link prevew
+ - link
+ - convert it all to the library with instruction & create demo how to attach to project
