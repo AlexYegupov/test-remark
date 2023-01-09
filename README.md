@@ -41,6 +41,26 @@ md --(remark-plugins)--> validated_md --(rehype-plugiins)--> html
 
 ```
 
+### Add images to md
+
+Either:
+
+* By any text editor manually
+* VSCode > Markdown Paste extenstion & Ctrl+Alt+v hotkey
+* VSCode > drag&drop & manual fix path
+* VSCode > Ctrl+Shift+p > "markdown insert image from the workspace" (can set custom key for this)
+
+### Add link to md
+
+Either:
+
+* by any text editor manually
+* `VSCode >  Ctrl+Shift+p > "markdown insert image from the workspace"` (can set custom key for this)
+* VSCode > type `[](` and press `Ctrl+space` and in the dropdown select desired file.md#chapter
+
+
+
+
 ## See also
 remark/plugins.md at main · remarkjs/remark https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins
 
@@ -55,13 +75,21 @@ Explore - unified https://unifiedjs.com/explore/
 Quick start https://docsify.js.org/#/quickstart
 
 
+
 # TODO
- - load images
- - format md (by pretter or natively by remark?)
- - terms storage strategy (md references?)
+
+   todo/find remark plugin: empty lnks
+     [](doc#chapter3)   ->>>  [doc#chapter3](doc#chapter3)
+
  - TOC
  - styling
  - header, footer
  - link prevew
  - link
  - convert it all to the library with instruction & create demo how to attach to project
+
+ - autolink items like JIRA-123 to links using one of:
+   - https://gitlab.com/staltz/remark-linkify-regex
+   - https://unifiedjs.com/explore/package/remark-autolink-references/
+   - https://github.com/remarkjs/remark-gfm
+   - https://github.com/remarkjs/remark-github
