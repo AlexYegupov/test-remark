@@ -6,9 +6,11 @@ Todolist is a list of [todo-item]s.
 
 *   [my-definition2]
 *   [my definition2][my-definition2]
-*   [](doc3.md#chapter-3)
+*   [doc3.md#chapter-3](doc3.md#chapter-3)
 
-[](doc2.md#here-is-doc2)
+[ax](doc2.md#here -is-doc2)
+
+[bbb.md#here-is-doc2](bbb.md#here-is-doc2)
 
 ## subheader 1.1
 

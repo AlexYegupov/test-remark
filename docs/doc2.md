@@ -100,8 +100,8 @@ fdasd
 
 this is chapter 3 dfafdf
 
-[](./doc3.md)
+[./doc3.md](./doc3.md)
 
-[](./doc2.md#chapter2)
+[./doc2.md#chapter2](./doc2.md#chapter2)
 
 додо

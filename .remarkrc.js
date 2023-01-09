@@ -23,14 +23,20 @@ export default {
     //[require('remark-reference-links'), {}],
     [remarkValidateLinks],
 
-    /* [() => (tree, file) => {
-     *   visit(tree, 'link', (node, index, parent) => {
-     *     if (node.title === null) {
-     *       node.title = node.url;
-     *     }
-     *   })
-     * }],
-     */
+    // replace empty link text to link url
+    // [](my#link) -> [my#link](my#link)
+    [() => (tree, file) => {
+      visit(tree, 'link', (node, index, parent) => {
+
+        if (node.url && !node?.children?.[0]?.value) {
+          //node.title = node.url;
+          node.children = [{
+            type: 'text',
+            value: node.url,
+          }]
+        }
+      })
+    }],
 
     //[remarkToc, {heading: 'contents'}]
 
@@ -51,11 +57,6 @@ const markdownToHTMLPlugins = [
         }
       })
     }],
-
-    //[remarkHTML],
-    [remarkRehype],
-    [rehypeSlug], // add id to <h1>
-
 /*  replace .md -> .html links as rehype plugin
     [() => (tree, file) => {
       visit(tree, 'element', (node, index, parent) => {
@@ -67,6 +68,10 @@ const markdownToHTMLPlugins = [
       })
     }],
  */
+
+    //[remarkHTML],
+    [remarkRehype],
+    [rehypeSlug], // add id to <h1>
 
     [rehypeAutolinkHeadings],  // <h2>My Header</h2><a id="my-header"></a>
     [rehypeStringify],

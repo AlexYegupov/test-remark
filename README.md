@@ -78,9 +78,6 @@ Quick start https://docsify.js.org/#/quickstart
 
 # TODO
 
-   todo/find remark plugin: empty lnks
-     [](doc#chapter3)   ->>>  [doc#chapter3](doc#chapter3)
-
  - TOC
  - styling
  - header, footer
