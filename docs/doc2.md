@@ -96,8 +96,6 @@ dsfaadfs dfdfdf
 dsaf
 fdasd
 
-![aa](./myimage.png)
-
 ## Chapter3
 
 this is chapter 3
@@ -106,4 +104,4 @@ this is chapter 3
 
 [](./doc2.md#chapter2)
 
-[broken link](brokenlink#chapter2)
+додо

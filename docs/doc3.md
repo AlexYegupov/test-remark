@@ -4,6 +4,6 @@ text
 
 ### chapter2
 
-[back to index.md](index.md)
+[back to README.md](README.md)
 
 ### chapter3

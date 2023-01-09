@@ -24,9 +24,9 @@
     "remark-lint-no-dead-urls": "^1.1.0"
   },
   "scripts": {
-    "validate-docs": "yarn remark -f ./*.md -o ./test-output",
+    "process": "yarn remark -f ./docs -o ./docs",
     "docsify-init": "docsify init ./docs",
-    "docs-server": "(cd docs && python3 -m http.server 3000)"
+    "preview": "(cd docs && python3 -m http.server 3000)"
   },
   "type": "module"
 }

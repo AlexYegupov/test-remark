@@ -6,7 +6,7 @@
 
 [#chapter2](#chapter2)
 
-[#broken-chapter](#broken-chapter)
+[#BROKEN-chapter](#BROKEN-chapter)
 
 [./doc2.md](./doc2.md)
 
@@ -14,17 +14,23 @@
 
 [doc2.md](doc2.md)
 
-[doc2.html](./doc2.html)
-
 [doc2.md#chapter2](./doc2.md#chapter2)
 
-[doc2.md#broken-chapter](doc2.md#broken-chapter)
+[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter)
+
+[docBROKENLINK](docBROKENLINK)
+
+[dead--url.com](http://dead--url.com)
 
 [docчетыре](./docчетыре.md)
 
 fdffdties textddddfd dfsadf sadffdsa sdafdf
 
 ## subchapter 1.2
+
+![](myimage.png)
+
+![aa](./myimage.png)
 
 dffdff fdfdf fddf df dfddf eee
 
@@ -36,10 +42,6 @@ My definitons:
 *   [my-definition][]
 *   [my-definition2][my-definition2]
 *   [my-definition2][]
-
-[docBROKENLINK](docBROKENLINK)
-
-[dead--url.com](http://dead--url.com)
 
 automatic link:
 
@@ -57,7 +59,7 @@ And then define the link:
 Visit [Daring Fireball][] for more information2.
 And then define the link:
 
-Visit \[broken]\[] for more information2.
+Visit \[BROKEN]\[] for more information2.
 And then define the link:
 
 definition:

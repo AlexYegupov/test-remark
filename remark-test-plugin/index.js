@@ -9,8 +9,6 @@ const exp = () => (tree, file) => {
     if (node.depth !== 1) {
       return
     }
-    // JUST
-    return;
 
     visit(node, 'text', textNode => {
       textNode.value = 'BREAKING ' + textNode.value

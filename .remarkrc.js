@@ -1,6 +1,6 @@
 //import remarkToc from 'remark-toc'
 
-//import testPlugin from './remark-test-plugin/index.js'
+import testPlugin from './remark-test-plugin/index.js'
 //import noDeadUrls from './remark-lint-no-dead-internal-urls/index.js'
 //import remarkHTML from 'remark-html';
 import remarkValidateLinks from 'remark-validate-links';
@@ -9,6 +9,7 @@ import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
+
 
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
@@ -22,11 +23,15 @@ export default {
     //[testPlugin],
     //[require('remark-reference-links'), {}],
     [remarkValidateLinks],
+    [rehypeAutolinkHeadings],
 
     //[remarkToc, {heading: 'contents'}]
+
+    //(not using rehype now) [...md2htmlPlugins]
   ]
 }
 
+// rehype plugins
 const md2htmlPlugins = [
     // .md links -> .html links
     [() => (tree, file) => {
@@ -44,7 +49,6 @@ const md2htmlPlugins = [
     //[remarkHTML],
     [remarkRehype],
     [rehypeSlug], // add id to <h1>
-    [rehypeAutolinkHeadings],
 
 /*  replace .md -> .html links as rehype plugin
     [() => (tree, file) => {
