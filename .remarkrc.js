@@ -1,5 +1,4 @@
 //import remarkToc from 'remark-toc'
-
 import testPlugin from './remark-test-plugin/index.js'
 //import noDeadUrls from './remark-lint-no-dead-internal-urls/index.js'
 //import remarkHTML from 'remark-html';
@@ -23,16 +22,23 @@ export default {
     //[testPlugin],
     //[require('remark-reference-links'), {}],
     [remarkValidateLinks],
-    [rehypeAutolinkHeadings],
+
+    /* [() => (tree, file) => {
+     *   visit(tree, 'link', (node, index, parent) => {
+     *     if (node.title === null) {
+     *       node.title = node.url;
+     *     }
+     *   })
+     * }],
+     */
 
     //[remarkToc, {heading: 'contents'}]
 
-    //(not using rehype now) [...md2htmlPlugins]
+    //(not using rehype now) [...markdownToHTMLPlugins]
   ]
 }
 
-// rehype plugins
-const md2htmlPlugins = [
+const markdownToHTMLPlugins = [
     // .md links -> .html links
     [() => (tree, file) => {
       visit(tree, 'link', (node, index, parent) => {
@@ -61,6 +67,8 @@ const md2htmlPlugins = [
       })
     }],
  */
+
+    [rehypeAutolinkHeadings],  // <h2>My Header</h2><a id="my-header"></a>
     [rehypeStringify],
 
     [() => (tree, file) => {

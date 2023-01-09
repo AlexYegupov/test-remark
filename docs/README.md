@@ -4,15 +4,11 @@
 
 Todolist is a list of [todo-item]s.
 
-* [my-definition2]
-* [my definition2][my-definition2]
-* [](doc3#chapter3)
+*   [my-definition2]
+*   [my definition2][my-definition2]
+*   [](doc3.md#chapter-3)
 
-
-[](doc3.md#
-)
-
-
+[](doc2.md#here-is-doc2)
 
 ## subheader 1.1
 
@@ -26,19 +22,19 @@ Todolist is a list of [todo-item]s.
 
 [./doc2.md](./doc2.md)
 
-[doc2](doc2)
+<!-- [doc2.md](doc2.md) -->
 
-[doc2.md](doc2.md)
+<!-- [doc2.md](doc2.md)
 
 [doc2.md#chapter2](./doc2.md#chapter2)
 
-[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter)
+[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter) -->
 
 [docBROKENLINK](docBROKENLINK)
 
 [dead--url.com](http://dead--url.com)
 
-[docчетыре](./docчетыре.md)
+[docчетыре.md](./docчетыре.md)
 
 fdffdties textddddfd dfsadf sadffdsa sdafdf
 
@@ -56,16 +52,16 @@ dffdff fdfdf fddf df dfddf eeetodo
 
 My definitons:
 
-* [my definition][my-definition]
-* [my-definition]
-* [my-definition2]
-* [my-definition2]
+*   [my definition][my-definition]
+*   [my-definition]
+*   [my-definition2]
+*   [my-definition2]
 
 automatic link:
 
-* </doc3>
-* <a>doc3</a>
-* <a href="doc3">doc3</a>
+*   <doc3>
+*   <a>doc3</a>
+*   <a href="doc3">doc3</a>
 
 Visit [Daring Fireball] for more information.
 And then define the link:
@@ -92,6 +88,9 @@ asdffdas
 dffsdfdsas
 
 [todo-item]: #todo-item
-[my-definition]: doc2.md#chapter-1
+
+[my-definition]: doc2.md#chapter2
+
 [my-definition2]: #chapter2
+
 [Daring Fireball]: http://daringfireball.net/

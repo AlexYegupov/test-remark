@@ -7,6 +7,6 @@ text
 dafsfdsas
 [back to README.md](README.md)
 
-### chapter3
+### chapter 3
 
 sdafdfa
