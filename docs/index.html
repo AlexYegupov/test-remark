@@ -22,9 +22,15 @@ x<head>
       name: 'My docs',      // site name to display on sidebar
 
       autoHeader: true,
+
+      search: {
+        maxAge: 300,            // need both keys to make it refreshed
+        namespace: 'website-2', //
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
