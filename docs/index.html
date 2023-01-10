@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+x<head>
   <meta charset="UTF-8">
   <title>Document</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -13,7 +13,15 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true,  // load _sidebar.md
+      loadNavbar: true,
+      //maxLevel: 6,      // TOC level
+      subMaxLevel: 6,      // show TOC on sidebar
+      mergeNavbar: true,  // merae navbar + sidebar on small screens
+      name: 'My docs',      // site name to display on sidebar
+
+      autoHeader: true,
     }
   </script>
   <!-- Docsify v4 -->

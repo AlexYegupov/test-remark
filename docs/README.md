@@ -1,14 +1,22 @@
 # My Todolist documentation
 
-# Todolist
+## Table of contents
+
+*   [Todolist](#todolist)
+*   [subheader 1.1](#subheader-11)
+*   [todo item](#todo-item)
+*   [subchapter 1.2](#subchapter-12)
+*   [chapter 1](#chapter-1)
+*   [chapter2](#chapter2)
+*   [chapter 3](#chapter-3)
+
+## Todolist
 
 Todolist is a list of [todo-item]s.
 
 *   [my-definition2]
 *   [my definition2][my-definition2]
 *   [doc3.md#chapter-3](doc3.md#chapter-3)
-
-[ax](doc2.md#here -is-doc2)
 
 [bbb.md#here-is-doc2](bbb.md#here-is-doc2)
 
@@ -83,11 +91,11 @@ And then define the link:
 
 ## chapter 1
 
-asdffdas
+this is chapter 1
 
 ## chapter2
 
-dffsdfdsas
+this is chapter 2
 
 [todo-item]: #todo-item
 

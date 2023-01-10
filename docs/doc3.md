@@ -1,6 +1,4 @@
-# this is doc3
-
-text
+here is doc3
 
 ### chapter2
 

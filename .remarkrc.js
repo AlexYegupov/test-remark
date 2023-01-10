@@ -1,4 +1,4 @@
-//import remarkToc from 'remark-toc'
+import remarkToc from 'remark-toc'
 import testPlugin from './remark-test-plugin/index.js'
 //import noDeadUrls from './remark-lint-no-dead-internal-urls/index.js'
 //import remarkHTML from 'remark-html';
@@ -13,14 +13,12 @@ import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
 
-//module.exports = {
 export default {
   settings: {
     bullet: '*',
   },
   plugins: [
     //[testPlugin],
-    //[require('remark-reference-links'), {}],
     [remarkValidateLinks],
 
     // replace empty link text to link url
@@ -38,7 +36,7 @@ export default {
       })
     }],
 
-    //[remarkToc, {heading: 'contents'}]
+    [remarkToc, {heading: 'Table of contents'}]
 
     //(not using rehype now) [...markdownToHTMLPlugins]
   ]

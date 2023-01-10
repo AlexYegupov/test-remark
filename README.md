@@ -26,11 +26,18 @@ It's about a project documentation that is created mostly created by developer t
    In case of problems with docsify can append rehype plugins to remark plugin chain that can do the same work (md -> html convertion)
 
 
+## Markdown preview
+
+"Markdown Preview Enhanced" VSCoode extension
+
+(or maybe Docsify preview https://marketplace.visualstudio.com/items?itemName=dzylikecode.docsify-preview)
+
+
 
 ## Current scheme
 
 ```
-md --(remark-plugins)--> validated_md --(docsify)--> html
+md --(remark-plugins)--> validated_md --(docsify)--> view_md_in_browser
 
 ```
 
@@ -56,12 +63,13 @@ Either:
 
 * by any text editor manually
 * `VSCode >  Ctrl+Shift+p > "markdown insert image from the workspace"` (can set custom key for this)
-* VSCode > type `[](` and press `Ctrl+space` and in the dropdown select desired file.md#chapter
+* VSCode > type `[]()` and press `Ctrl+space` inside `()` and in the dropdown select desired file.md#chapter
 
-
-
+## Howto
 
 ## See also
+
+
 remark/plugins.md at main · remarkjs/remark https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins
 
 remark-plugin · GitHub Topics https://github.com/topics/remark-plugin
@@ -76,10 +84,8 @@ Quick start https://docsify.js.org/#/quickstart
 
 
 
-# TODO
 
- - TOC
- - styling
+## TODO
  - header, footer
  - link prevew
  - link
@@ -90,3 +96,8 @@ Quick start https://docsify.js.org/#/quickstart
    - https://unifiedjs.com/explore/package/remark-autolink-references/
    - https://github.com/remarkjs/remark-gfm
    - https://github.com/remarkjs/remark-github
+
+
+### Backlog
+
+ - autogenerate sidebar TOC by md filenames
