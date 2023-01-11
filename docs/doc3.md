@@ -1,4 +1,4 @@
-herne is doc3
+heroe is doc3
 
 ### chapter2
 

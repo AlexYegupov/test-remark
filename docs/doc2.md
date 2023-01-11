@@ -105,3 +105,6 @@ this is chapter 3 dfafdf
 [./doc2.md#chapter2](./doc2.md#chapter2)
 
 додо
+
+##### my term
+My definition

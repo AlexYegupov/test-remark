@@ -1,5 +1,17 @@
 # My Todolist documentation
 
+## Admiral and Yellow Jack was here
+
+Yar Pirate Ipsum : Yellow Jack
+Mizzen galleon aye Pirate Round capstan grapple jolly boat American Main tackle strike colors. Reef fathom bilge rat measured fer yer chains warp boatswain log Corsair gangway man-of-war. Cog driver schooner hands spanker lanyard furl lugger transom holystone.
+
+Yellow Jack case shot Nelsons folly ye interloper gangway Sink me heave to capstan lanyard. Starboard bucko long boat chase spike gunwalls piracy log aft brigantine. Skysail piracy fathom sheet gangway transom boom Spanish Main tackle pressgang.
+
+Crack Jennys tea cup Buccaneer broadside Cat o'nine tails weigh anchor bilge water scurvy jolly boat crimp haul wind. Grog take a caulk brigantine spanker haul wind knave Yellow Jack bounty poop deck red ensign. Hogshead scourge of the seven seas interloper Admiral of the Black draught pillage black spot trysail hang the jib marooned.
+
+Here is some code to help the English pirate hunters find the notorious pirate Jack Rackham
+
+
 ## Table of contents
 
 *   [Todolist](#todolist)
@@ -64,8 +76,15 @@ My definitons:
 
 *   [my definition][my-definition]
 *   [my-definition]
+*   [my-definition]
 *   [my-definition2]
 *   [my-definition2]
+
+[my-definition]: doc2.md#chapter2
+<!-- [my-definition]: doc2.md#chapter2 -->
+
+[my-definition2]: #chapter2
+
 
 automatic link:
 
@@ -99,8 +118,10 @@ this is chapter 2
 
 [todo-item]: #todo-item
 
-[my-definition]: doc2.md#chapter2
-
-[my-definition2]: #chapter2
-
 [Daring Fireball]: http://daringfireball.net/
+
+#### `REMOTE MARKDOWN` (insert add any remote markdown)
+----
+[remoteMarkdownUrl](https://raw.githubusercontent.com/JerryC8080/docsify-remote-markdown/master/README.md)
+
+----

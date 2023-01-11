@@ -86,10 +86,11 @@ Quick start https://docsify.js.org/#/quickstart
 
 
 ## TODO
- - header, footer
  - link prevew
- - link
+ - terms [user]s
  - convert it all to the library with instruction & create demo how to attach to project
+
+ - ?autoconvert links to definitions
 
  - autolink items like JIRA-123 to links using one of:
    - https://gitlab.com/staltz/remark-linkify-regex
