@@ -2,8 +2,7 @@
 
 ## Admiral and Yellow Jack was here
 
-Yar Pirate Ipsum : Yellow Jack
-Mizzen galleon aye Pirate Round capstan grapple jolly boat American Main tackle strike colors. Reef fathom bilge rat measured fer yer chains warp boatswain log Corsair gangway man-of-war. Cog driver schooner hands spanker lanyard furl lugger transom holystone.
+Yar Pirate Ipsum : Yellow Jack Mizzen galleon aye Pirate Round capstan grapple jolly boat American Main tackle strike colors. Reef fathom bilge rat measured fer yer chains warp boatswain log Corsair gangway man-of-war. Cog driver schooner hands spanker lanyard furl lugger transom holystone.
 
 Yellow Jack case shot Nelsons folly ye interloper gangway Sink me heave to capstan lanyard. Starboard bucko long boat chase spike gunwalls piracy log aft brigantine. Skysail piracy fathom sheet gangway transom boom Spanish Main tackle pressgang.
 
@@ -11,16 +10,21 @@ Crack Jennys tea cup Buccaneer broadside Cat o'nine tails weigh anchor bilge wat
 
 Here is some code to help the English pirate hunters find the notorious pirate Jack Rackham
 
-
 ## Table of contents
 
 *   [Todolist](#todolist)
+
 *   [subheader 1.1](#subheader-11)
+
 *   [todo item](#todo-item)
+
 *   [subchapter 1.2](#subchapter-12)
+
 *   [chapter 1](#chapter-1)
+
 *   [chapter2](#chapter2)
-*   [chapter 3](#chapter-3)
+
+    *   *   [`REMOTE MARKDOWN` (insert add any remote markdown)](#remote-markdown-insert-add-any-remote-markdown)
 
 ## Todolist
 
@@ -81,10 +85,10 @@ My definitons:
 *   [my-definition2]
 
 [my-definition]: doc2.md#chapter2
+
 <!-- [my-definition]: doc2.md#chapter2 -->
 
 [my-definition2]: #chapter2
-
 
 automatic link:
 
@@ -121,7 +125,11 @@ this is chapter 2
 [Daring Fireball]: http://daringfireball.net/
 
 #### `REMOTE MARKDOWN` (insert add any remote markdown)
-----
+
+***
+
 [remoteMarkdownUrl](https://raw.githubusercontent.com/JerryC8080/docsify-remote-markdown/master/README.md)
 
-----
+***
+
+[glossary](_glossary)

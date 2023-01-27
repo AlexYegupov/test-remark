@@ -19,6 +19,7 @@
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
+    "@stijn-dejongh/docsify-glossary": "^1.0.1",
     "concurrently": "^7.6.0",
     "docsify-cli": "^4.4.4",
     "remark-lint-no-dead-urls": "^1.1.0"
