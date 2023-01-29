@@ -1,9 +1,9 @@
 This is my sidebar
 
-*   [Home](/)
+*   [HOME](/)
 
-*   [doc 2](doc2.md)
+*   [DOC 2](doc2.md)
 
-*   [doc 3](doc3.md)
+*   [DOC 3](doc3.md)
 
-*   [my glossary](_glossary.md)
+*   [MY GLOSSARY](_glossary.md)

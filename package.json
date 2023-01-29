@@ -22,6 +22,7 @@
     "@stijn-dejongh/docsify-glossary": "^1.0.1",
     "concurrently": "^7.6.0",
     "docsify-cli": "^4.4.4",
+    "remark-autolink-references": "^2.0.0",
     "remark-lint-no-dead-urls": "^1.1.0"
   },
   "scripts": {

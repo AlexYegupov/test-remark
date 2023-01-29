@@ -26,6 +26,8 @@ Here is some code to help the English pirate hunters find the notorious pirate J
 
     *   *   [`REMOTE MARKDOWN` (insert add any remote markdown)](#remote-markdown-insert-add-any-remote-markdown)
 
+*   [chapter with autolink](#chapter-with-autolink)
+
 ## Todolist
 
 Todolist is a list of [todo-item]s.
@@ -133,3 +135,7 @@ this is chapter 2
 ***
 
 [glossary](_glossary)
+
+## chapter with autolink
+
+this ('JiRA -123' without space) should be converted to a link (see remark-autolink-references: [JIRA-123](https://example.atlassian.net/browse/JIRA-123)

@@ -1,6 +1,6 @@
-# Project documentation strategy hypotesis
+# Project documentation
 
-It's about a project documentation that is created mostly created by developer than someone else like a customer.
+It's about a project documentation that is created mostly by developer but can be improved by anyone else who can edit markdowns & commit to git.
 
 1. Create docs as a markdown files in project repository
 
@@ -34,19 +34,24 @@ It's about a project documentation that is created mostly created by developer t
 
 
 
-## Current scheme
+## How it works
+
+Validate and sanityse markdown by Remark and then view md as html by Docsify:
 
 ```
-md --(remark-plugins)--> validated_md --(docsify)--> view_md_in_browser
+md --(remark & plugins)--> md --(docsify & plugins)--> md_as_html
 
 ```
 
-## Alternative scheme (if docsify will have limits)
+
+### Possible Docsify -> Rehype replacement in future
+Some day (in case of necessity) we can replace Docsify by Rehype:
+```
+md --(remark & plugins)--> md --(rehype & plugiins)--> html
 
 ```
-md --(remark-plugins)--> validated_md --(rehype-plugiins)--> html
 
-```
+Of cource docsify plugins would be lost in that case. So before using any new docsify plugins always think about possibility to use the similar remark plugin if possible.
 
 ### Add images to md
 

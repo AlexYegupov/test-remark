@@ -8,7 +8,7 @@ import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
-
+import autolink from 'remark-autolink-references'
 
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
@@ -36,7 +36,12 @@ export default {
       })
     }],
 
-    [remarkToc, {heading: 'Table of contents'}]
+    [remarkToc, {heading: 'Table of contents'}],
+
+    [autolink, {
+      prefix: 'JIRA-',
+      url: 'https://MYJIRALINK.com/browse/JIRA-<num>'
+    }],
 
     //(not using rehype now) [...markdownToHTMLPlugins]
   ]

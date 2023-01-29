@@ -13,14 +13,14 @@ x<head>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      name: 'My docs sidebar title',      // sidebar title
       repo: '',
       loadSidebar: true,  // load _sidebar.md
+
       loadNavbar: true,
       //maxLevel: 6,      // TOC level
       subMaxLevel: 6,      // show TOC on sidebar
       mergeNavbar: true,  // merae navbar + sidebar on small screens
-      name: 'My docs',      // site name to display on sidebar
 
       autoHeader: true,
 
@@ -31,15 +31,18 @@ x<head>
         placeholder: 'Search',
       },
 
+      customPageTitle: {
+        prefix:     'My docs page title',
+        suffix:     '',
+      },
+
       plugins: [
-        /* // 'edit on git' link on every page
+        // 'edit on git' link on every page
         EditOnGithubPlugin.create(
-          'https://github.com/docsifyjs/docsify/blob/master/docs/',
+          'https://MYURLREMOTE.com/docs/',
           null,
-          function(file) {
-            return 'edit on git'
-          }
-        ) */
+          'Edit on git'
+        )
       ],
 
       glossify: {
@@ -52,5 +55,6 @@ x<head>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
   <script src="./docsify-glossary.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
 </body>
 </html>
