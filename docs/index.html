@@ -36,6 +36,12 @@ x<head>
         suffix:     '',
       },
 
+      timeUpdater: {
+        text: "<p style='text-align: right'>modified: {docsify-updated}</span>",
+        formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+        whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+      },
+
       plugins: [
         // 'edit on git' link on every page
         EditOnGithubPlugin.create(
@@ -56,5 +62,6 @@ x<head>
   <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
   <script src="./docsify-glossary.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 </body>
 </html>
