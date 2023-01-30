@@ -44,7 +44,6 @@ export default {
       url: 'https://MYJIRALINK.com/browse/JIRA-<num>'
     }],
 
-
     // (keep to end)
     //(not using rehype now) [...markdownToHTMLPlugins]
   ]

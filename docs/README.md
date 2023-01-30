@@ -8,17 +8,19 @@ Yellow Jack case 11 shot Nelsons folly ye interloper gangway Sink me heave to ca
 
 Crack Jennys tea cup Buccaneer broadside Cat o'nine tails weigh anchor bilge water scurvy jolly boat crimp haul wind. Grog take a caulk brigantine spanker haul wind knave Yellow Jack bounty poop deck red ensign. Hogshead scourge of the seven seas interloper Admiral of the Black draught pillage black spot trysail hang the jib marooned.
 
-Here is some code to help the English pirate hunters find the notorious pirate Jack Rackham
+Here is some code to help the English pirate hunters find the notorious pirate Jack Rackham or Shadmiral
+
+What is Todo Item? I don't know. What is [todo item]s?
+
+[todo item]: _glossary.md#todo-item
 
 ## Todolist
 
 Todolist is a list of [todo-item]s.
 
-*   [my-definition2]
-*   [my definition2][my-definition2]
+*   \[my-definition2]
+*   \[my definition2]\[my-definition2]
 *   [doc3.md#chapter-3](doc3.md#chapter-3)
-
-[bbb.md#here-is-doc2](bbb.md#here-is-doc2)
 
 ## subheader 1.1
 
@@ -58,25 +60,20 @@ fdffdties textddddfd dfsadf sadffdsa sdafdf
 
 dffdff fdfdf fddf df dfddf eeetodo
 
-[1](./doc2.md#chapter3)
+[1](./doc2.md#chapter-number-3)
 
 My definitons:
 
 *   [my definition][my-definition]
 *   [my-definition]
-*   [my-definition]
-*   [my-definition2]
-*   [my-definition2]
+*   [def with space]
 
 [my-definition]: doc2.md#chapter2
 
-<!-- [my-definition]: doc2.md#chapter2 -->
-
-[my-definition2]: #chapter2
+[def with space]: doc2.md#chapter-number-3
 
 automatic link:
 
-*   <doc3>
 *   <a>doc3</a>
 *   <a href="doc3">doc3</a>
 
@@ -116,7 +113,7 @@ this is chapter 2
 
 ***
 
-[glossary](_glossary)
+[glossary](_glossary.md)
 
 ## chapter with autolink
 
