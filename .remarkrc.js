@@ -44,23 +44,6 @@ export default {
       url: 'https://MYJIRALINK.com/browse/JIRA-<num>'
     }],
 
-    // replace __$VARIABLE__ to correspondent env variable values
-    [() => (tree, file) => {
-      visit(tree, 'strong', node => {
-        let variableValue = null;
-        visit(node, 'text', textNode => {
-          const s = textNode.value
-          if (s.startsWith('$')) {
-            variableValue = process.env[s.substr(1)]
-          }
-        })
-        if (variableValue) {
-          node.type = 'text'
-          node.value = variableValue
-        }
-      })
-    }],
-
 
     // (keep to end)
     //(not using rehype now) [...markdownToHTMLPlugins]
