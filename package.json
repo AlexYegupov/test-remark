@@ -23,7 +23,8 @@
     "concurrently": "^7.6.0",
     "docsify-cli": "^4.4.4",
     "remark-autolink-references": "^2.0.0",
-    "remark-lint-no-dead-urls": "^1.1.0"
+    "remark-lint-no-dead-urls": "^1.1.0",
+    "remark-sort-definitions": "^1.0.5"
   },
   "scripts": {
     "build": "yarn build-docs && yarn prepare-docsify",

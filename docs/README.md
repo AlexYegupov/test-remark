@@ -12,14 +12,13 @@ Here is some code to help the English pirate hunters find the notorious pirate J
 
 What is Todo Item? I don't know. What is [todo item]s?
 
-[todo item]: _glossary.md#todo-item
-
 ## Todolist
 
 Todolist is a list of [todo-item]s.
 
 *   \[my-definition2]
 *   \[my definition2]\[my-definition2]
+*   [doc3.md#chapter-3](doc3.md#chapter-3)
 *   [doc3.md#chapter-3](doc3.md#chapter-3)
 
 ## subheader 1.1
@@ -70,10 +69,6 @@ My definitons:
 *   [my-definition]
 *   [def with space]
 
-[my-definition]: doc2.md#chapter2
-
-[def with space]: doc2.md#chapter-number-3
-
 automatic link:
 
 *   <a>doc3</a>
@@ -103,12 +98,18 @@ this is chapter 1
 
 this is chapter 2
 
-[todo-item]: #todo-item
-
-[Daring Fireball]: http://daringfireball.net/
-
 [glossary](_glossary.md)
 
 ## chapter with autolink
 
 this ('JiRA -123' without space) should be converted to a link (see remark-autolink-references: [JIRA-123](https://example.atlassian.net/browse/JIRA-123)
+
+[Daring Fireball]: http://daringfireball.net/
+
+[def with space]: doc2.md#chapter-number-3
+
+[my-definition]: doc2.md#chapter2
+
+[todo item]: _glossary.md#todo-item
+
+[todo-item]: #todo-item

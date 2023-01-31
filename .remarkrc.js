@@ -8,6 +8,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
 import autolink from 'remark-autolink-references'
+import remarkSortDefinitions from 'remark-sort-definitions';
 
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
@@ -44,6 +45,8 @@ export default {
       prefix: 'JIRA-',
       url: 'https://MYJIRALINK.com/browse/JIRA-<num>'
     }],
+
+    [remarkSortDefinitions]
 
     // (keep to end)
     //(not using rehype now) [...markdownToHTMLPlugins]
