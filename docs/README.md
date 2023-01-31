@@ -30,8 +30,6 @@ Todolist is a list of [todo-item]s.
 
 [#chapter2](#chapter2)
 
-[#BROKEN-chapter](#BROKEN-chapter)
-
 [./doc2.md](./doc2.md)
 
 <!-- [doc2.md](doc2.md) -->
@@ -40,9 +38,13 @@ Todolist is a list of [todo-item]s.
 
 [doc2.md#chapter2](./doc2.md#chapter2)
 
-[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter) -->
+<!--
+[#BROKEN-chapter](#BROKEN-chapter)
+
+[doc2.md#BROKEN-chapter](doc2.md#BROKEN-chapter)
 
 [docBROKENLINK](docBROKENLINK)
+-->
 
 [dead--url.com](http://dead--url.com)
 
@@ -105,17 +107,8 @@ this is chapter 2
 
 [Daring Fireball]: http://daringfireball.net/
 
-#### `REMOTE MARKDOWN` (insert add any remote markdown)
-
-***
-
-[remoteMarkdownUrl](https://raw.githubusercontent.com/JerryC8080/docsify-remote-markdown/master/README.md)
-
-***
-
 [glossary](_glossary.md)
 
 ## chapter with autolink
 
 this ('JiRA -123' without space) should be converted to a link (see remark-autolink-references: [JIRA-123](https://example.atlassian.net/browse/JIRA-123)
-

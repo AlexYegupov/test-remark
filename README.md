@@ -43,15 +43,22 @@ md --(remark & plugins)--> md --(docsify & plugins)--> md_as_html
 
 ```
 
+Note: for the simplicity we don't build docs to the different folder
+
 
 ### Possible Docsify -> Rehype replacement in future
+
 Some day (in case of necessity) we can replace Docsify by Rehype:
 ```
 md --(remark & plugins)--> md --(rehype & plugiins)--> html
 
 ```
+In that case we lose docsify plugins.
 
-Of cource docsify plugins would be lost in that case. So before using any new docsify plugins always think about possibility to use the similar remark plugin if possible.
+### How to choose between similar remark or docsify plugin
+
+In the common case try to use remark plugins but for cases when they generate secondary data (like TOC) then consider using rather remark plugin
+
 
 ### Add images to md
 

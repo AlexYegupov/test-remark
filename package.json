@@ -26,7 +26,9 @@
     "remark-lint-no-dead-urls": "^1.1.0"
   },
   "scripts": {
-    "process": "yarn remark -f ./docs -o ./docs",
+    "build": "yarn build-docs && yarn prepare-docsify",
+    "build-docs": "yarn remark -f ./docs -o ./docs",
+    "prepare-docsify": "./bin/prepare-docsify.sh",
     "docsify-init": "docsify init ./docs",
     "preview": "(cd docs && python3 -m http.server 3000)"
   },
