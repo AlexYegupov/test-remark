@@ -118,3 +118,4 @@ this is chapter 2
 ## chapter with autolink
 
 this ('JiRA -123' without space) should be converted to a link (see remark-autolink-references: [JIRA-123](https://example.atlassian.net/browse/JIRA-123)
+
