@@ -1,5 +1,6 @@
-<!-- do not modify, Generated automatically by prepare-docsify.sh -->
+<!-- Generated automatically by prepare-docsify.sh -->
 * [Home](README.md)
-* [doc2.md](doc2.md)
-* [doc3.md](doc3.md)
-* [docчетыре.md](docчетыре.md)
+* [doc2](doc2.md)
+* [doc3](doc3.md)
+* [docчетыре](docчетыре.md)
+* [Glossary](_glossary.md)
