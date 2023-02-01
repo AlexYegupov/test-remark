@@ -98,8 +98,6 @@ this is chapter 1
 
 this is chapter 2
 
-[glossary](_glossary.md)
-
 ## chapter with autolink
 
 this ('JiRA -123' without space) should be converted to a link (see remark-autolink-references: [JIRA-123](https://example.atlassian.net/browse/JIRA-123)

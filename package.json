@@ -26,7 +26,7 @@
     "remark-sort-definitions": "^1.0.5"
   },
   "scripts": {
-    "build": "yarn build-docs && yarn prepare-docsify",
+    "build": "rm -rf ./docs/_sidebar.md && yarn build-docs && yarn prepare-docsify",
     "build-docs": "yarn remark -f ./docs -o ./docs",
     "prepare-docsify": "./bin/prepare-docsify.sh",
     "docsify-init": "docsify init ./docs",
