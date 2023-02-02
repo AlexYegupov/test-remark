@@ -37,10 +37,10 @@ export default {
       })
     }],
 
-    // probably tend to generate toc on docsify level (to avoid confusing if necessary to modify toc when editing document)
-    // add empy "## Table of contents" chapter to auto-update TOC there
+    // (seems better to to generate TOC on docsify level (to avoid confusing to see TOC while editing document)
     // [remarkToc, {heading: 'Table of contents'}],
 
+    // replace text with autolink 
     [autolink, {
       prefix: 'JIRA-',
       url: 'https://MYJIRALINK.com/browse/JIRA-<num>'

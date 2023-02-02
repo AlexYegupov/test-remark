@@ -26,9 +26,10 @@
     "remark-sort-definitions": "^1.0.5"
   },
   "scripts": {
-    "build": "rm -rf ./docs/_sidebar.md && yarn build-docs && yarn prepare-docsify",
-    "build-docs": "yarn remark -f ./docs -o ./docs",
-    "prepare-docsify": "./bin/prepare-docsify.sh",
+    "build": "yarn build-docs",
+    "build-docs": "rm -rf ./docs/_sidebar.md && yarn build-remark && yarn build-docsify",
+    "build-remark": "yarn remark -f ./docs -o ./docs",
+    "build-docsify": "./bin/build-docsify.sh",
     "docsify-init": "docsify init ./docs",
     "preview": "(cd docs && python3 -m http.server 3000)"
   },

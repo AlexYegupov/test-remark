@@ -2,7 +2,7 @@
 
 ## Todo list
 
-An ordered scope of [user](#user)'s [#todo-item](#todo-item)s.
+An ordered scope of [user](#user)'s [todo-item](#todo-item)s.
 
 ## Todo item
 
