@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="stylesheet" href="styles.css">
 
-  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
 
 
 </head>
@@ -27,8 +27,6 @@
       subMaxLevel: 6,      // show TOC on sidebar
       mergeNavbar: true,  // merae navbar + sidebar on small screens
 
-      autoHeader: true,
-
       executeScript: true,
 
       // fulltext search pluggin
@@ -44,9 +42,9 @@
       },
 
       timeUpdater: {
-        text: "<p style='text-align: right'>modified: {docsify-updated}</span>",
+        text: `<div class="time-updater">modified: {docsify-updated}</div>`,
         formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
-        whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+        //whereToPlace: "top",  // "top" or "bottom", default to "bottom"
       },
 
       remoteMarkdown: {
@@ -54,12 +52,13 @@
       },
 
       plugins: [
-        // 'edit on git' link on every page
+        /* // 'edit on git' link on every page
         EditOnGithubPlugin.create(
           'https://MYURLREMOTE.com/docs/',
           null,
           'Edit on git'
         )
+         */
       ],
 
     }

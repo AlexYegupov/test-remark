@@ -1,0 +1,19 @@
+@keyframes highlight {
+  from {
+    background-color: var(--sidebar-nav-link-border-color--active);
+  }
+  to {
+    background-color: unset;
+  }
+}
+
+.active-link {
+  animation-name: highlight;
+  animation-duration: 1.5s;
+}
+
+
+.time-updater {
+  text-align: right;
+  margin: 0;
+}
