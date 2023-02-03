@@ -1,25 +1,25 @@
 import remarkToc from 'remark-toc'
-//import testPlugin from './remark-test-plugin/index.js'
 //import remarkHTML from 'remark-html';
 import remarkValidateLinks from 'remark-validate-links';
 import remarkRehype from 'remark-rehype';
-import rehypeStringify from 'rehype-stringify'
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
-import autolink from 'remark-autolink-references'
-//import remarkSortDefinitions from 'remark-sort-definitions';
+import remarkAutolinkReferences from 'remark-autolink-references'
+import remarkGfm from 'remark-gfm'  // seem
+// import rehypeStringify from 'rehype-stringify'
+// import rehypeSlug from 'rehype-slug';
+// import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 import { visit } from 'unist-util-visit'
 import { isElement } from 'hast-util-is-element'
-
 
 export default {
   settings: {
     bullet: '*',
   },
   plugins: [
-    //[testPlugin],
+    // Note: ok for autolink literals. BUT footnote, strikethrough, tables and todolist seems has bugs.
+    [remarkGfm],
+
     [remarkValidateLinks],
 
     // replace empty link text to link url
@@ -40,13 +40,11 @@ export default {
     // (seems better to to generate TOC on docsify level (to avoid confusing to see TOC while editing document)
     // [remarkToc, {heading: 'Table of contents'}],
 
-    // replace text with autolink 
-    [autolink, {
+    // replace text with autolink (alt: remark-linkify-regex)
+    [remarkAutolinkReferences, {
       prefix: 'JIRA-',
       url: 'https://MYJIRALINK.com/browse/JIRA-<num>'
     }],
-
-    //w [remarkSortDefinitions]
 
     // (keep to end)
     //(not using rehype now) [...markdownToHTMLPlugins]
