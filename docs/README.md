@@ -14,27 +14,30 @@ The todolist demo shows how the <!--simple link: --> [user](glossary.md#user) ca
 
 Autolink urls (remark-gfm): [www.example.com](http://www.example.com), <https://example.com>, and <contact@example.com>.
 
-autolink by regexp (remark-autolink-references):  <!-- "JIRA- 123" without space  -->
+Autolink by regexp (remark-autolink-references):  <!-- "JIRA- 123" without space  -->
 [JIRA-123](https://example.atlassian.net/browse/JIRA-123)
 
-image: ![my image](favicon.ico)
-
-<s>strikethrough text</s>
+Image: ![my image](favicon.ico)
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Test</th>
+    <th>Table</th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
-    <td>Germany</td>
   </tr>
   <tr>
     <td>Magazzini Alimentari Riuniti</td>
     <td>Giovanni Rovelli</td>
-    <td>Italy</td>
   </tr>
 </table>
+
+
+formatting: **underlined**  ***bold*** <s>strikethrough</s> 
+
+    this
+      is
+         formatted
+           text
